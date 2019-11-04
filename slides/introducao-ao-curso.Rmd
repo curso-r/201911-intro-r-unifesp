@@ -1,7 +1,7 @@
 ---
 title: "Introdução à programação em R"
-author: "<img src = 'https://d33wubrfki0l68.cloudfront.net/9b0699f18268059bdd2e5c21538a29eade7cbd2b/67e5c/img/logo/cursor1-5.png' width = '20%'>"
-date: ""
+author: "<img src = 'https://d33wubrfki0l68.cloudfront.net/295643c6243701ae6a9bac3fb8ad467ff0ce3c84/d1785/img/logo/cursor1-41.png' width = '20%'>"
+date: "http://bit.ly/intro-r-unifesp"
 output:
   xaringan::moon_reader:
     css: ["default", "default-fonts", "css/custom-intro.css"]
@@ -10,6 +10,7 @@ output:
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+      titleSlideClass: ["center", "middle", "title-slide"]
 ---
 class: middle, center
 
@@ -109,7 +110,8 @@ class: middle, center
 ## Visualização
 
 <center>
-<img src="img/arte_ggplot2.png" width = 80%>
+<img src="img/arte_ggplot2.png" width = 60%>
+<img src="img/examples-of-ggplot-charts.png" width = 45%>
 </center>
 
 ---
@@ -119,8 +121,23 @@ class: middle, center
 - Dashboards estáticos
 
 <center>
-<img src="img/arte_rmarkdown.png" width = 70%>
+<img src="img/case_exemplo.png" width = 70%>
 </center>
+
+
+
+---
+
+## Agenda
+
+- Segunda	04/11/2019
+- Quarta	06/11/2019	
+- Segunda	11/11/2019	
+- Quarta	13/11/2019	
+- Segunda	25/11/2019	
+- Quarta	27/11/2019	
+
+Das 19h00 às 22h00 (total de 18 horas)
 
 ---
 
@@ -169,6 +186,15 @@ Também temos um blog:
 <img src="img/r4ds.png" width = 40%> 
 </a>
 </center>
+
+
+---
+# Aprendizado
+
+### O objetivo do curso é quebrar inércia da etapa inicial de aprendizado. Assim como um idioma, o jeito de ficar fluente em uma linguagem de programação é praticando no dia a dia.
+
+<img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif" style = "display: block; margin-left: auto; margin-right: auto;">
+
 
 ---
 class: middle, center
@@ -271,13 +297,6 @@ class: middle, center
 class: middle, center
 
 # Informações importantes
-
----
-# Aprendizado
-
-### O objetivo do curso é ajudar a quebrar inércia da etapa inicial de aprendizado. Assim como um idioma, o único jeito de aprender uma linguagem de programação é praticando.
-
-<img src="https://media.giphy.com/media/o0vwzuFwCGAFO/giphy.gif" style = "display: block; margin-left: auto; margin-right: auto;">
 
 ---
 # Pedindo ajuda

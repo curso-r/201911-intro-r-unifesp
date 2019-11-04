@@ -6,6 +6,11 @@ library(tidyverse)
 
 imdb <- read_rds("dados/imdb.rds")
 
+View(imdb)
+glimpse(imdb)
+head(imdb)
+tail(imdb)
+
 # select ------------------------------------------------------------------
 
 # exemplo 1

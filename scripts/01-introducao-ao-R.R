@@ -1,7 +1,12 @@
+# Projeto no R (.Rproj): o ícone de cubo azul
+# RStudio e os 4 quadrantes
+
 # Criando objetos/variáveis -----------------------------------------------
 
 obj <- 1
 obj
+
+meus_dados <- mtcars
 
 # Também dizemos 'guardando as saídas'
 y <- seq(1, 10, length.out = 5)
@@ -36,8 +41,9 @@ c(1, 4, 3, 10)
 vetor <- c(4, 8, 15, 16, 23, 42)
 
 vetor[1]
-vetor[c(1, 3)]
 vetor[-5]
+
+vetor[ c(1, 3)]
 vetor[-c(1, 3)]
 
 
@@ -137,6 +143,15 @@ minha_soma(2, 3)
 1 >= 0
 2 <= 1
 
+estados <- c("PR", "RS", "SC", "SP", "RJ", "ES", 
+             "MG", "GO", "DF", "MT", "MS", "AM", 
+             "TO", "RR", "RO", "AC", "PA", "PI", 
+             "PB", "PE", "SE", "BA", "AP", "MA",
+             "CE", "AL", "RN")
+estados_de_interesse <- c("AM", "RR", "SP")
+
+estados %in% estados_de_interesse
+
 # Exercício: crie um vetor de números e veja o 
 # que acontece se você fizer uma comparação 
 # lógica com ele.
@@ -190,7 +205,8 @@ funcao_com_muitos_argumentos(argumento_1 = 10, argumento_2 = 14, argumento_3 = 3
 
 # Para instalar pacotes
 
-install.packages(c("tidyverse", "rmarkdown", "devtools"))
+install.packages("tidyverse")
+install.packages(c("readxl", "writexl", "rmarkdown", "devtools", "RSQLite", "jsonlite", "purrr"))
 
 # Para carregar pacotes
 
@@ -199,13 +215,6 @@ library(dplyr)
 # Também é possível acessar as funções usando ::
 
 dplyr::select()
-
-
-# Categorização ------------------------------------------------------------
-
-x <- -10:30
-
-x_categorizado <- ifelse(x < 0, "negativo", "positivo")
 
 
 # Operações vetoriais  -----------------------------------------------------
@@ -245,9 +254,10 @@ x <- 1:10
 
 x < 4
 as.numeric(x < 4)
-sum(x < 4)
+sum(x < 4) # soma de vetores lógicos é a mesma coisa que contagem.
+mean(x < 4) # média de vetores lógicos é a mesma coisa que proporção.
+
 x[x < 4]
-sum(x[x < 4])
 
 # exemplo mais complexo!
 mtcars$mpg[mtcars$wt >= 3]
@@ -261,3 +271,16 @@ mtcars$mpg[mtcars$wt >= 3]
 # (utilize a função sum()).
 
 
+
+# Categorização ------------------------------------------------------------
+
+x <- -10:30
+
+x_categorizado <- ifelse(x < 0, "negativo", "positivo")
+
+x_categorizado2 <- case_when(
+  x < 0  ~ "negativo",
+  x == 0 ~ "zero",
+  x < 0 ~ "positivo",
+  TRUE ~ "GRUPO GENERICO"
+)
