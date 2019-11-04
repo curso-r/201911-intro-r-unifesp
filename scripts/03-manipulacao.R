@@ -10,6 +10,13 @@ View(imdb)
 glimpse(imdb)
 head(imdb)
 tail(imdb)
+unique(imdb$cor)
+table(imdb$cor)
+summary(imdb$duracao)
+nrow(imdb)
+ncol(imdb)
+dim(imdb)
+names(imdb)
 
 # select ------------------------------------------------------------------
 
